@@ -4,7 +4,11 @@ mkdir -p external
 cd $THIS_DIR/external
 
 git clone -b docking https://github.com/ocornut/imgui.git
-git clone -b main https://github.com/libsdl-org/SDL.git
+cd imgui
+git checkout 58eb40db76783f5da09e592ca3eb421f4f2197e3 # v1.88
+cd ..
+
+git clone -b SDL2 https://github.com/libsdl-org/SDL.git
 
 # Clone imgui-node-editor
 #git clone -b develop https://github.com/thedmd/imgui-node-editor.git        # official version
