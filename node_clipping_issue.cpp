@@ -102,8 +102,18 @@ namespace DockspaceUtils
 
 namespace Demo
 {
-    void Setup() { NodeContextHolder::gHolder.Setup(); }
-    void TearDown() { NodeContextHolder::gHolder.TearDown(); }
+    void Setup() 
+    { 
+        NodeContextHolder::gHolder.Setup(); 
+#ifdef _WIN32
+        // Incomplete fix for windows HighDPI monitor
+        ImGui::GetIO().FontGlobalScale = 2.f;
+#endif
+    }
+    void TearDown() 
+    { 
+        NodeContextHolder::gHolder.TearDown(); 
+    }
 
     void Gui()
     {
