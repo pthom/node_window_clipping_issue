@@ -1,5 +1,7 @@
 # Example code for reproducing https://github.com/thedmd/imgui-node-editor/issues/205
 
+See [short video explanation](https://traineq.org/poub/node_clipping_issue.mp4) (4 minutes)
+
 ## Build instructions
 
 ```
@@ -9,6 +11,7 @@ cd build
 cmake ..
 make -j
 ```
+
 
 ## Code explanation
 
