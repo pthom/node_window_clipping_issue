@@ -10,6 +10,7 @@ endif()
 ##########################################################
 # Add SDL3
 ##########################################################
+set(BUILD_SHARED_LIBS OFF)
 add_subdirectory(external/SDL)
 
 
@@ -26,7 +27,7 @@ file(GLOB imgui_sources
 add_library(imgui_sdl3_opengl3 ${imgui_sources})
 target_include_directories(imgui_sdl3_opengl3 PUBLIC ${imgui_dir})
 target_include_directories(imgui_sdl3_opengl3 PUBLIC ${imgui_dir}/backends)
-target_link_libraries(imgui_sdl3_opengl3 PUBLIC SDL3::SDL3-static ${OPENGL_LIBRARIES})
+target_link_libraries(imgui_sdl3_opengl3 PUBLIC SDL3-static ${OPENGL_LIBRARIES})
 
 ##########################################################
 # Add imgui-node-editor
