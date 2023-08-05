@@ -18,7 +18,7 @@ make -j
 It was not possible to use the ImGui version inside node editor, since it is outdated, hence this separate repository.
 
 The code is contained in two short files: 
-* [main_imgui_sdl_opengl3.cpp](main_imgui_sdl_opengl3.cpp): This file is an almost direct copy of  imgui/examples/example_glfw_opengl3/main.cpp, the only difference being that it calls functions from node_clipping_issue.cpp (for the Gui and context setup)
+* [main_imgui_sdl3_opengl3.cpp](main_imgui_sdl3_opengl3.cpp): This file is an almost direct copy of  imgui/examples/example_glfw_opengl3/main.cpp, the only difference being that it calls functions from node_clipping_issue.cpp (for the Gui and context setup)
 
 * [node_clipping_issue.cpp](node_clipping_issue.cpp)
 Demo code. 
