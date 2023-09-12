@@ -41,5 +41,5 @@ target_link_libraries(imgui_node_editor PUBLIC imgui_sdl3_opengl3)
 ##########################################################
 # Build app
 ##########################################################
-add_executable(node_clipping_issue main_imgui_sdl3_opengl3.cpp node_clipping_issue.cpp)
-target_link_libraries(node_clipping_issue PRIVATE imgui_sdl3_opengl3 imgui_node_editor)
+add_executable(suspend_resume_issue.cpp main_imgui_sdl3_opengl3.cpp suspend_resume_issue.cpp)
+target_link_libraries(suspend_resume_issue.cpp PRIVATE imgui_sdl3_opengl3 imgui_node_editor)
